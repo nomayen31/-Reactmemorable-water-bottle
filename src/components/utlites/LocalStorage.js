@@ -1,4 +1,4 @@
-const gerStoredCart = () =>{
+const getStoredCart = () =>{
     const storedCartString = localStorage.getItem('cart');
     if(storedCartString){
         return JSON.parse(storedCartString)
@@ -14,10 +14,13 @@ const saveCartToLs = cart =>{
 
 
 const addToLs = id =>{
-    const cart = gerStoredCart();
+    const cart = getStoredCart();
     cart.push(id); 
 
     saveCartToLs(cart)
 }
 
-export {addToLs}
+export {addToLs, getStoredCart}
+
+
+// ============ 5-19 ==============
