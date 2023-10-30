@@ -14,6 +14,7 @@ const Bottle = ({bottle, handleAddToCart}) => {
     );
 };
 
+
 export default Bottle;
 
 
